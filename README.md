@@ -33,12 +33,12 @@ It contains only numerical input variables which are the result of a PCA transfo
 - Best classifiers are: 1. ExtraTrees, 2. RandomForest, 3. LGBM
 
 **[3_Metric.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/3_Metric.ipynb)**
-- AUPRC is set as loss function and as a Metric
+- AUPRC is implemented as a loss function and as a metric
 - CrossValidation is implemented
 - Quick implementation of SMOTE oversampling slightly improves the result
 
 **[4_HPO.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/4_HPO.ipynb)**
-- imblearn undersampling/oversampling is implemented as a pipeline
+- Imblearn undersampling/oversampling is implemented as a pipeline
 - Undersampling did not demonstrate score improvement and is not used (probably usefull for slower classifiers but LGBM is quick without undersampling)
 - Oversampling with SMOTE implemented in SKOPT search space (Fig.3. below)
 - Resampling is done during cross-validation
