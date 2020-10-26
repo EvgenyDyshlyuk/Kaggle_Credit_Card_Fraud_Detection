@@ -7,7 +7,7 @@ This dataset presents transactions that occurred in two days, where we have 492 
 
 It contains only numerical input variables which are the result of a PCA transformation. Unfortunately, due to confidentiality issues, we cannot provide the original features and more background information about the data. Features V1, V2, … V28 are the principal components obtained with PCA, the only features which have not been transformed with PCA are 'Time' and 'Amount'. Feature 'Time' contains the seconds elapsed between each transaction and the first transaction in the dataset. The feature 'Amount' is the transaction Amount, this feature can be used for example-dependant cost-senstive learning. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.
 
-# Solution implemented:
+## Solution implemented:
 Dealing with imbalanced datasets implies using sertain metrics. AUPRC is used here (as proposed by competition organizers). Fight imbalance problem can be done: 
 - Algorithmically (on algorithmic level: - e.g. by setting class_weight parameter = "balanced"
 - By undersampling majority class
