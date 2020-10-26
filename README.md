@@ -48,11 +48,11 @@ Dealing with imbalanced datasets implies using sertain metrics. AUPRC is used he
 ***Fig.3.Hyperparameters optimization space in addition to model hyperparameters includes 2 SMOTE upsampling parameters: alpha_over and k_neighbour***
 
 **[5_Ensemble.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/5_Ensemble.ipynb)**
-- Simple bagging(averaging) is implemented. Results of three optimized individual models and ensemble results on test data are:
-**LGBM = 0.836** 
-ExtraTrees = 0.832  
-RandomForest = 0.823  
-**Simple bagging (averaging) ensemble = 0.834**  
+- Simple bagging(averaging) is implemented. Results of three optimized individual models and ensemble results on test data are:  
+**LGBM = 0.836**   
+ExtraTrees = 0.832    
+RandomForest = 0.823    
+**Simple bagging (averaging) ensemble = 0.834**    
 
 
 **Further work would imply NN solutions as they seem to be very promising with this data, e.g. in:**
