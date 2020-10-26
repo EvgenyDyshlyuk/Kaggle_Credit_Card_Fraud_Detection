@@ -264,7 +264,7 @@ def find_best_hyperparameters(model, X, y, dynamic_params_space, scoring, plot, 
         #model.set_params(**static_params)
         model.set_params(**dynamic_params) 
         cv = StratifiedKFold(n_splits=nfold, random_state=seed, shuffle=True)
-        scores = cross_validate(model, X_train, y_train, cv=cv, scoring = scoring, n_jobs=-1)
+        scores = cross_validate(model, X, y, cv=cv, scoring = scoring, n_jobs=-1)
         val_score = np.mean(scores['test_score'])
         return -val_score
     
@@ -337,7 +337,7 @@ def find_best_hyperparameters_sampling(model, X, y, dynamic_params_space, scorin
         pipeline = make_pipeline(over, model)
         
         cv = StratifiedKFold(n_splits=nfold, random_state=seed, shuffle=True)
-        scores = cross_validate(pipeline, X_train, y_train, cv=cv, scoring = scoring, n_jobs=-1)
+        scores = cross_validate(pipeline, X, y, cv=cv, scoring = scoring, n_jobs=-1)
         val_score = np.mean(scores['test_score'])
         return -val_score
     
