@@ -26,17 +26,7 @@ It contains only numerical input variables which are the result of a PCA transfo
 
 **[4_HPO.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/4_HPO.ipynb)**
 
-[HPO](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/figures/HPO.png)   
+![HPO](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/figures/HPO.png)   
 ***Fig.3.Hyperparameters optimization space in addition to model hyperparameters includes 2 SMOTE upsampling parameters: alpha_over and k_neighbour***
 
-**###[5_Ensemble.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/5_Ensemble.ipynb)**
-
-
-
-
-
-
-
-
-### About
-33
+**[5_Ensemble.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/5_Ensemble.ipynb)**
