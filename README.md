@@ -49,12 +49,12 @@ Dealing with imbalanced datasets implies using sertain metrics. AUPRC is used he
 
 **[5_Ensemble.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/5_Ensemble.ipynb)**
 - Simple bagging(averaging) is implemented. Results of three optimized individual models and ensemble results on test data are:
-LGBM = 0.836
-ExtraTrees = 0.832
-RandomForest = 0.823
-Simple bagging (averaging) ensemble = 0.834
+**LGBM = 0.836** 
+ExtraTrees = 0.832  
+RandomForest = 0.823  
+**Simple bagging (averaging) ensemble = 0.834**  
 
 
-**NN solutions seem to be very promising as demonstrated in: **
+**NN solutions seem to be very promising as demonstrated in:**
 - https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets
 - https://www.kaggle.com/shivamb/semi-supervised-classification-using-autoencoders
