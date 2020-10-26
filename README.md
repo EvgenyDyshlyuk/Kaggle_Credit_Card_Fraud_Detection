@@ -55,6 +55,6 @@ RandomForest = 0.823
 **Simple bagging (averaging) ensemble = 0.834**  
 
 
-**NN solutions seem to be very promising as demonstrated in:**
+**Further work would imply NN solutions as they seem to be very promising with this data, e.g. in:**
 - https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets
 - https://www.kaggle.com/shivamb/semi-supervised-classification-using-autoencoders
