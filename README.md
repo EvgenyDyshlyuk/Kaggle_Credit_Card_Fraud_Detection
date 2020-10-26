@@ -10,14 +10,16 @@ It contains only numerical input variables which are the result of a PCA transfo
 ## The project consists of 5 parts:
 **[1_EDA.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/1_EDA.ipynb)**
 
-- Some nice data visualizations can be found [here](https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets)
-- In this part we find that unstratified train/test split was done at 70/30 (target split 74/26).
+- Unstratified train/test split was done at 70/30 (target split 74/26).
 - Time was shuffled so we order by time to restore the original dataset.
+- Some nice data visualizations can be found [here](https://www.kaggle.com/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets)
 - Shapley feature importance [(read why it's good)](https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf) for an LGBMClassifier trained on the dataset is below in Fig.1.  
 ![Shap](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/figures/SHAP.png)  
 ***Fig.1. Shapley Feature Importance***
 
 **[2_Fit_Classifiers.ipynb](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/2_Fit_Classifiers.ipynb)**
+- A number of sklearn classifiers + lgbm classifier fit to dataset as a quick solution
+- Setting parameter class_weight = "balanced" improves performance on all classifiers except RandomTrees and ExtraTrees which show best results with and without this parameter used (see Fig.2. below).
 
 ![Class_weight](https://github.com/EvgenyDyshlyuk/Kaggle_Credit_Card_Fraud_Detection/blob/master/figures/Class_weight.png)   
 ***Fig.2.RandomForest and ExtraTrees classifiers trained without (left) and with (right) "class_weigth" parameter set to balanced***
