@@ -4,6 +4,7 @@ pd.set_option('display.max_columns', 100)
 import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['figure.figsize'] = (20,5) # Set standard output figure size
+#import seaborn as sns
 
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import auc
